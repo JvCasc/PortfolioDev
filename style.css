@@ -75,7 +75,7 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: repeat(auto-fit, 350px);
     grid-template-rows: 400px 400px 400px;
     justify-content: center; 
     gap: 50px;
@@ -199,4 +199,3 @@ body{
     align-items: center;
     justify-content: center;
 }
-
