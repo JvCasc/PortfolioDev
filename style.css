@@ -1,17 +1,19 @@
 @font-face{
-    font-family: 'UncutSants';
-    src: url('fonts/Superior-Regular.otf');
+    font-family: 'Heebo';
+    src: url('fonts/Heebo-Medium.ttf');
 }
 
 body{
     margin: 0px;
+    height: 2000px;
 }
 
+/* Primeira sessão */
 .info{
     padding-top: 280px;
-    color: white;
+    color: #292727;
     text-align: center;
-    font-family: "UncutSants", sans-serif;
+    font-family: "Heebo", sans-serif;
 }
 
 .info h1{
@@ -26,13 +28,13 @@ body{
     margin-bottom: 8px;
 }
 
-img{
+.info img{
     width: 20px;
     height: 20px;
     padding-right: 10px;
 }
 
-.mail{
+#mail{
     width: 30px;
     height: 30px;
     margin-bottom: -8px;
@@ -41,7 +43,160 @@ img{
 
 .back{
     margin: 0px;
-    background:url(snow.jpg) no-repeat scroll 50%;
+    background:url(images/beach.jpg) no-repeat scroll 50%;
     background-size:cover;
-    min-height: 700px;
+    min-height: 1000px;
 }
+
+/* Segunda sessão */
+
+.projects{
+    text-align: center;
+
+}
+
+.titulo2{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: "Heebo", sans-serif;
+}
+
+.titulo2 h1{
+    margin-top: 0px;
+    margin-bottom: -8px;
+    color: #313131;
+    font-size: 30px;
+}
+
+.titulo2 p{
+    color: #525252;
+    font-size: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 400px 400px 400px;
+    justify-content: center; 
+    gap: 50px;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.img1{
+    height: 300px;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.img3{
+    height: 300px;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.primeiro{
+    position: relative;
+}
+
+.terceiro{
+    position: relative;
+}
+
+.primeiro:hover .img1{
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+.terceiro:hover .img3{
+    filter: blur(5px);
+    transition: 0.5s;
+}
+
+.primeiro:hover h2{
+    background: linear-gradient(45deg,rgb(67, 70, 126), rgb(108, 17, 226));
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: 0.5s ease;
+}
+
+.terceiro:hover h2{
+    background: linear-gradient(45deg,rgb(63, 70, 201), rgb(9, 239, 255));
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: 0.5s ease;
+}
+
+.primeiro:hover .button-git{
+    opacity: 1;                 
+    visibility:visible;
+
+    transition: 0.5s ease;
+}
+
+.terceiro:hover .button-git{
+    opacity: 1;                 
+    visibility:visible;
+
+    transition: 0.5s ease;
+}
+
+
+
+
+.nome-projeto{
+    font-family: "Heebo", sans-serif;
+    color: #313131;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.descrição{
+    font-family: "Heebo", sans-serif;
+    color: #525252;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.button-git{
+    position: absolute;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #525252;
+    align-items: center;
+    justify-content: center;    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;                 
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+}
+
+.button-git img{
+    width: 30px;
+}
+
+.segundo h2{
+    font-family: "Heebo", sans-serif;
+    color: #313131;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+.segundo img{
+    height: 300px;
+}
+
+/* Botões git*/
+.quinto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
